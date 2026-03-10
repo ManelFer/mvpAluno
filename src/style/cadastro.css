@@ -1,0 +1,221 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+/* LADO IMAGEM */
+
+.left{
+  background-image: url("../assets/loginimg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.overlay h1{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.overlay p{
+  font-size: 18px;
+  max-width: 400px;
+}
+
+
+/* LADO DIREITO */
+
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FDF9F3;
+}
+
+
+/* CARD */
+
+.card{
+
+  width: 420px;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+
+  text-align: center;
+
+}
+
+
+/* ICON */
+
+.icon-wrapper{
+
+  width: 80px;
+  height: 80px;
+
+  border-radius: 50%;
+
+  background: #eef2f7;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+  margin-bottom: 20px;
+
+}
+
+.main-icon{
+  width: 36px;
+  height: 36px;
+  color: #2563eb;
+}
+
+
+/* BADGE */
+
+.badge{
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  background: #fff3cd;
+
+  color: #b45309;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  margin-bottom: 15px;
+
+}
+
+.badge-icon{
+  width: 14px;
+}
+
+
+/* TEXT */
+
+.description{
+  color: #6b7280;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.link{
+  color: #2563eb;
+  font-weight: 500;
+}
+
+
+/* INFO BOX */
+
+.info-box{
+
+  display: flex;
+
+  gap: 12px;
+
+  background: #f1f5f9;
+
+  padding: 16px;
+
+  border-radius: 10px;
+
+  text-align: left;
+
+  margin-bottom: 25px;
+
+}
+
+.info-icon{
+  width: 20px;
+  color: #2563eb;
+}
+
+
+/* BUTTONS */
+
+.actions{
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn-primary{
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 16px;
+
+  border-radius: 10px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+}
+
+.btn-secondary{
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: #f3f4f6;
+
+  border: none;
+
+  padding: 10px 16px;
+
+  border-radius: 10px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+}
+
+.btn-icon{
+  width: 16px;
+}

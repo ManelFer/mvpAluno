@@ -1,0 +1,143 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+/* LADO IMAGEM */
+
+.left{
+  background-image: url("../assets/loginimg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.overlay h1{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.overlay p{
+  font-size: 18px;
+  max-width: 400px;
+}
+
+/* LADO LOGIN */
+
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FDF9F3;
+}
+
+/* FORM */
+
+.login-form{
+  background-color: white;
+  width: 350px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  padding: 40px;
+  margin: 10vh;
+
+  border-radius: 16px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+h2{
+  text-align: center;
+  font-size: 28px;
+}
+
+.subtitle{
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+.input-group{
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input{
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+input:focus{
+  outline: none;
+  border-color: #6366f1;
+}
+
+.btn-login{
+  margin-top: 10px;
+  padding: 12px;
+
+  border-radius: 10px;
+  border: none;
+
+  background: #6366f1;
+  color: white;
+
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-login:hover{
+  background: #4f46e5;
+}
+
+.create{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+a{
+  color: #6366f1;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+.container{
+  grid-template-columns: 1fr;
+}
+
+.left{
+  display:none;
+}
+
+}
