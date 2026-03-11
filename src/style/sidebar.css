@@ -1,0 +1,109 @@
+/* ============================= */
+/* SIDEBAR */
+/* ============================= */
+
+.sidebar {
+  width: 260px;
+
+  background: #ffffff;
+  border-right: 1px solid #f0f0f0;
+
+  padding: 30px 18px;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 2px 0 12px rgba(0,0,0,0.03);
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+
+/* ============================= */
+/* LOGO */
+/* ============================= */
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  padding-left: 10px;
+  color: #111827;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+
+/* ============================= */
+/* MENU */
+/* ============================= */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+/* ============================= */
+/* ITEM DO MENU */
+/* ============================= */
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 14px;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #6b7280;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+
+/* ============================= */
+/* ICONES */
+/* ============================= */
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #9ca3af;
+  transition: all 0.25s ease;
+}
+
+
+/* ============================= */
+/* HOVER */
+/* ============================= */
+
+.menu-item:hover {
+  background: #D9C8B4;
+  color: #593E1C;
+}
+
+.menu-item:hover .icon {
+  color: #593E1C;
+}
+
+
+/* ============================= */
+/* LINK ATIVO */
+/* ============================= */
+
+.router-link-active {
+  background: #d8c8b5;
+  box-shadow: 2px 2px rgba(89,62,28,0.9);
+  color: #593E1C;
+  font-weight: 600;
+}
+
+.router-link-active .icon {
+  color: #593E1C;
+}
