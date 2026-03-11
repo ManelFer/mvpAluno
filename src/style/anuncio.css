@@ -1,0 +1,89 @@
+.welcome-banner {
+  background: #D9C8B4;
+  border-radius: 18px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #593E1C;
+  margin-bottom: 30px;
+  overflow: hidden;
+  box-shadow: 10px 10px rgba(89, 62, 28, 1);
+}
+
+/* TEXTO */
+
+.banner-content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+/* BOTÕES */
+
+.banner-actions {
+  display: flex;
+  gap: 14px;
+}
+
+.btn-primary {
+  background: transparent;
+  border: 2px solid #593E1C;
+  color: #593E1C;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #593E1C;
+  color: #ffff;
+  scale: 1;
+  transform: translateY(-4px);
+}
+
+.btn-secondary {
+  background: #8C7961;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+  background: #593E1C;
+}
+
+/* ICONE */
+
+.banner-icon {
+  font-size: 60px;
+  opacity: 0.15;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  color: #593E1C;
+}
+
+/* RESPONSIVO */
+
+@media (max-width:800px) {
+  .welcome-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}

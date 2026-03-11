@@ -1,0 +1,65 @@
+/* GRID DOS CARDS */
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+
+.cards {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    /* box-shadow: 10px 10px rgba(89, 62, 28, 1); */
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+/* hover */
+
+.cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px rgba(89, 62, 28, 1);
+}
+
+/* header */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    gap: 20px;
+}
+
+/* icon */
+
+.card svg {
+    width: 28px;
+    height: 28px;
+    color: #593E1C;
+}
+
+/* title */
+
+.card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d2d2d;
+    margin: 0;
+    text-align: center;
+}
+
+/* description */
+
+.card-value {
+    font-size: 14px;
+    color: #6b6b6b;
+    line-height: 1.4;
+}

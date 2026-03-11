@@ -1,10 +1,39 @@
 .layout {
   display: flex;
   height: 100vh;
-  font-family: 'Segoe UI', Roboto, sans-serif;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #F8F6F6;
 }
+
+/* área principal */
 
 .main {
   flex: 1;
-  background-color: #F8F6F6;
+  padding: 32px;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* título */
+
+.main h1{
+  font-size: 26px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* grid do dashboard */
+
+.dashboard-grid{
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax( 320px));
+
+
+  /* max-width: 100vh; */
+
+  gap: 24px;
 }
